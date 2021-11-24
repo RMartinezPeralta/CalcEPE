@@ -1,0 +1,56 @@
+* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    border: black 3px solid;
+    border-radius: 10px;
+    background-image: url(../img/img6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+    opacity: 0.9;
+}
+
+h1 {
+    width: 100%;
+    font-size: 22px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 8px 8px 0px 0px ;
+    margin: -1px;
+    height: 36px;
+    border-bottom: black 3px solid;
+}
+
+div {
+    width: 400px;
+    height: auto;
+    background-color: darkgray;
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 0px 0px 8px 8px ;
+}
+
+.tipo-user {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    border: black 1px solid;
+    border-radius: 15px;
+}
+
+div button {
+    border-radius: 10px;
+}

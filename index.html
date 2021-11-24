@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - EPE</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <h1>Calculadora de Energía Eléctrica</h1>
+    <main>
+        <div>
+            <div>
+                <fieldset class="tipo-user">
+                    <legend style="text-align: center;">Tipo de usuario</legend>
+                    <label class="radio"><input type="radio" id="res" value="Res" name="usuario"/>Residencial</label>
+                    <label class="radio"><input type="radio" id="ind" value="Ind" name="usuario"/>Industrial</label>
+                </fieldset>
+            </div>
+            <div>
+                <label for="zona" name="zona" class="ubicacion">Zona</label>
+                <select name="distrito" id="ubicacion">
+                    <option value="">Seleccionar opción</option>
+                    <option value="centro">Distrito Centro</option>
+                    <option value="sur">Distrito Sur</option>
+                    <option value="oeste">Distrito Oeste</option>
+                    <option value="norte">Distrito Norte</option>
+                </select>
+            </div>
+            <div>
+                <label for="kWh" name="kWh">kWh de consumo mensual</label>
+                <input type="number" id="consumo">
+            </div>
+            <div>
+                <button button type="button" onclick="validarDatos()">Calcular costo</button>
+            </div>
+            <div>
+                <p style="font-size:24px; color: rgb(255, 10, 10);" id="resultado"></p>
+            </div>
+    </main>
+
+</body>
+
+</html>
